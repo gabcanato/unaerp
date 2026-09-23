@@ -1,3 +1,51 @@
+:root {
+    --cor-azul: #2f337e;
+    --cor-amarela: #ecdd12;
+    --cor-verde: #a5bd3d;
+    --cor-preta: #424242;
+}
+body{
+    background-color: white;
+    color: #424242;
+    font-weight: 500;
+}
+
+h1, h2, h3{
+  font-weight: bold;
+  color: var(--cor-azul);
+}
+
+.btn{
+    background-color: var(--cor-amarela);
+    color: var(--cor-azul);
+    border-color: var(--cor-amarela);
+    font-weight: 700;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    background-color: var(--cor-amarela);
+    color: var(--cor-azul);
+    border-color: var(--cor-amarela);
+}
+
+.navbar{
+    background-color: var(--cor-azul);
+    height: 85px;
+}
+
+.dropdown-menu, .dropdown-item:hover{
+    background-color: var(--cor-azul);
+}
+
+.navbar a, .navbar a::after{
+    color: white;
+}
+
+.navbar a:hover{
+    color: var(--cor-amarela);
+}
+
 .hero-section{
     height: 50vh;
     margin-top: 50px;
@@ -5,4 +53,57 @@
 
 .indicadores{
     margin: 80px 0px;
+}
+
+.card-title{
+    color: var(--cor-azul);
+    font-weight: bold;
+}
+
+form{
+    border: solid 3px var(--cor-azul);
+    background-color: var(--cor-azul);
+    color: white;
+    border-radius: 25px;
+    padding: 35px;
+    font-weight: 500;
+
+}
+.indicadores .card{
+ border: solid var(--cor-azul) 2px;
+ border-radius: 25px;
+ background-color: var(--cor-azul);
+ color: white;
+}
+
+.indicadores .card h3{
+    color: white;
+}
+
+
+form .btn{
+    width: 50%;
+}
+
+footer{
+    background-color: var(--cor-azul);
+    color: white;
+}
+
+footer p, a{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.p-rights{
+    font-size: 11px;
+    opacity: 0.7;
+}
+footer h7{
+    opacity: 0.7;
+}
+
+.img-icon-social{
+    margin-right: 5px;
+    opacity: 0.7;
 }

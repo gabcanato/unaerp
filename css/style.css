@@ -3,23 +3,80 @@
     --cor-amarela: #ecdd12;
     --cor-verde: #a5bd3d;
     --cor-preta: #424242;
+    --cor-azul-escuro: #090F2A;
 }
+
 body{
     background-color: white;
     color: #424242;
-    font-weight: 500;
+    font-weight: 400;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
+
 
 h1, h2, h3{
   font-weight: bold;
-  color: var(--cor-azul);
+  color: white;
+}
+
+.hero-section{
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    display: flex;
+    background-color: #2f337ed2;
+    position: relative;
+}
+
+.hero-section img{
+    height: 40px;
+    width: auto;
+}
+
+.hero-section::before{
+    background-image: url('../img/campus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    content: "";
+    z-index: -1;
+    inset: 0;
+    position: absolute;
+}
+
+ .hero-section p{
+    color: white;
+    font-weight: bolder;
+}
+
+.hero-section h1{
+    color: var(--cor-amarela);
+}
+
+.cursos .card{
+    font-size: 14px;
+    width: auto;
+    height: 400px;
+    margin: 10px;
+    border-radius: 25px;
+    background: #fff;
+    box-shadow: 15px 15px 25px #bebebe,
+             -15px -15px 25px #ffffff;
+}
+
+.card-img-top{
+    height: auto;
+    width: auto;
+    border-radius: 25px 25px 0px 0px;
 }
 
 .btn{
     background-color: var(--cor-amarela);
     color: var(--cor-azul);
     border-color: var(--cor-amarela);
-    font-weight: 700;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .btn:hover{
@@ -46,18 +103,13 @@ h1, h2, h3{
     color: var(--cor-amarela);
 }
 
-.hero-section{
-    height: 50vh;
-    margin-top: 50px;
-}
-
 .indicadores{
     margin: 80px 0px;
 }
 
 .card-title{
     color: var(--cor-azul);
-    font-weight: bold;
+    font-weight: 700;
 }
 
 form{
@@ -69,11 +121,16 @@ form{
     font-weight: 500;
 
 }
+
+
 .indicadores .card{
- border: solid var(--cor-azul) 2px;
- border-radius: 25px;
+ border: none;
+ border-radius: 20px;
  background-color: var(--cor-azul);
  color: white;
+ text-transform: uppercase;
+ font-weight: bold;
+ font-size: 15px;
 }
 
 .indicadores .card h3{
@@ -107,3 +164,4 @@ footer h7{
     margin-right: 5px;
     opacity: 0.7;
 }
+
